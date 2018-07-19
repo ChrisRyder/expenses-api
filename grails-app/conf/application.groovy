@@ -1,5 +1,4 @@
 
-
 // Added by the Spring Security Core plugin:
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'de.preyer.expenses.User'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'de.preyer.expenses.UserRole'

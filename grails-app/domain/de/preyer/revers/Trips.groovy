@@ -5,6 +5,9 @@ import grails.databinding.BindingFormat
 
 class Trips {
 
+    Date created
+    boolean done
+    boolean clip
     @BindingFormat('dd.MM.yyyy')
     Date beginning
     @BindingFormat('dd.MM.yyyy')
@@ -32,6 +35,11 @@ class Trips {
       upfront nullable: true
       exports nullable: false
       reason nullable: false
+        payor()
+        costCenter()
+        countires()
+        done nullable: true
+        clip nullable: true
     }
 
   }

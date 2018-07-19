@@ -24,5 +24,8 @@ class PartnersController extends RestfulController {
 
         respond Partners.findAllByClientAndHidden(true, false)
     }
-
+    @Override
+    def index() {
+        respond Partners.list()
+    }
 }
