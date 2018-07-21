@@ -16,9 +16,9 @@ class TripsController extends RestfulController {
 
     def index(Integer max) {
         //params.max = Math.min(max ?: 10, 100)
-        def listOfTrips = getAuthenticatedUser().username.equalsIgnoreCase ('Admin') ?
+        def listOfTrips = //getAuthenticatedUser().username.equalsIgnoreCase ('Admin') ?
                 Trips.findAll()
-                : Trips.findAllByUser(getAuthenticatedUser())
+                //: Trips.findAllByUser(getAuthenticatedUser())
 
         //println getAuthenticatedUser().username
         respond listOfTrips, model:[tripsInstanceCount: Trips.count()]

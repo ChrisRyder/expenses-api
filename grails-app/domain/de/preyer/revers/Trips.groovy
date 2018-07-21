@@ -37,7 +37,7 @@ class Trips {
       reason nullable: false
         payor()
         costCenter()
-        countires()
+        countries()
         done nullable: true
         clip nullable: true
     }
