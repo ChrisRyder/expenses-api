@@ -8,8 +8,8 @@ class Accommodations {
 	SettlementTypes settlementTypes
 	Countries countries
 
-	static hasMany = [travelDays: TravelDays]
-	static belongsTo = [SettlementTypes]
+	//static hasMany = [travelDays: TravelDays]
+	//static belongsTo = [SettlementTypes]
 
 	static mapping = {
 		version false
